@@ -55,7 +55,7 @@ int main(int argc, char* argv[]){
 				for(j=0;j<m;j++)
 					fscanf(_in,"%f",&a->mat[i][j]);
 			b = mat_reverse(a);
-			printf("Reverse of the given matrix:\n");
+			printf("Reverse of given matrix:\n");
 			mat_print(b);
 			mat_destroy(a);
 			mat_destroy(b);
@@ -67,7 +67,7 @@ int main(int argc, char* argv[]){
 			for(i=0;i<n;i++)
 				for(j=0;j<m;j++)
 					fscanf(_in,"%f",&a->mat[i][j]);
-			printf("Determinant of given matrix: %10.3f\n", mat_det(a));
+			printf("Determinant of given matrix: \n%10.3f\n", mat_det(a));
 			mat_destroy(a);
 			printf("...\n");
 			}
@@ -77,7 +77,7 @@ int main(int argc, char* argv[]){
 			for(i=0;i<n;i++)
 				for(j=0;j<m;j++)
 					fscanf(_in,"%f",&a->mat[i][j]);
-			printf("Rank of given matrix: %d\n", mat_rank(a));
+			printf("Rank of given matrix: \n%d\n", mat_rank(a));
 			mat_destroy(a);
 			printf("...\n");
 			}
